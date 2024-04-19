@@ -1,13 +1,54 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body,
+html,
+#root,
+.app {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* #root{
+  --fc-list-event-hover-bg-color:''
+} */
+@layer base {
+  h1 {
+    @apply text-[48px];
+    @apply font-SourceSans3;
+  }
+
+  h2 {
+    @apply text-[36px];
+    @apply font-SourceSans3;
+  }
+
+  h3 {
+    @apply text-[24px];
+    @apply font-SourceSans3;
+  }
+
+  h4 {
+    @apply text-[20px];
+    @apply font-SourceSans3;
+  }
+
+  h5 {
+    @apply text-[16px];
+    @apply font-SourceSans3;
+  }
+
+  h6 {
+    @apply text-[14px];
+    @apply font-SourceSans3;
+  }
+
+  p {
+    @apply font-SourceSans3;
+    ;
+  }
 }
