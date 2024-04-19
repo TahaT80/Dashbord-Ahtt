@@ -7,7 +7,7 @@ import { IoIosNotifications } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
 
 const TopBar = () => {
-  const [dark, setdark] = useState("off");
+  const [dark, setdark] = useState("on");
   function DarkMode() {
     document.documentElement.classList.toggle("dark");
   }
